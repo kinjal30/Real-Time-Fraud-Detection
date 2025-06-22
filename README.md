@@ -4,30 +4,7 @@ A comprehensive fraud detection system built with Apache Kafka, Flink, Spark, an
 
 ## Architecture Overview
 
-\`\`\`
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Transaction   │───▶│     Apache      │───▶│     Apache      │
-│   Generator     │    │     Kafka       │    │     Flink       │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │                       │
-                                │                       ▼
-                                │              ┌─────────────────┐
-                                │              │  Fraud Alerts   │
-                                │              │     Topic       │
-                                │              └─────────────────┘
-                                │                       │
-                                ▼                       ▼
-                       ┌─────────────────┐    ┌─────────────────┐
-                       │     Apache      │    │   Alert         │
-                       │     Spark       │    │   Monitoring    │
-                       └─────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │     Apache      │
-                       │     Hive        │
-                       └─────────────────┘
-\`\`\`
+![image](https://github.com/user-attachments/assets/f31643ad-6f7a-4273-b59c-253adb5aae9c)
 
 ## Features
 
